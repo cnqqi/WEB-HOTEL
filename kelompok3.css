@@ -1,0 +1,216 @@
+ /* style untuk keseluruhan body */
+body {
+    font-family: Helvetica; /* font yang digunakan
+    seluruh konten akan menggunakan hekvetica*/
+    /*padding dan margin diatur 0 agar konten tetap default*/
+    margin: 0;
+    padding:0;
+    
+}
+
+/* style Header */
+header {
+    background-color: #ffffff;/* warna bg putih */
+    color: #000000; /* warna text hitam */
+    padding:15px; /* jarak padding atas bawah kiri kanan 15px */
+    display: flex; /*  menyusun elemen diheader */
+    justify-content: space-between; /* membuat jarak logo dan menu */
+    align-items: center; /* mengatur logo agar berada diposisi tengah container*/
+    height: 50px; /* tinggi container 50px */
+    border-bottom: #000000 1px solid; /* membuat garis dibawah container */
+    z-index: 1; /*menjadikan layer header 1 langkah kedepan*/
+    width: 100%;/*agar panjang kontainer sesuai dengan resolusi layar*/
+    position: fixed;/*agar ketika discroll kebawah, posisi header tetap diatas body*/
+
+}
+
+/* style logo */
+.logokelompok3  {
+    width: 200px;
+    height: 200px;
+    /*lebar dan tinggi logo 200px*/
+}
+
+/*style Navigasi */
+nav {
+    display: flex; /* untuk menyusun elemen dinavigasi */
+    align-items: center; /* mengatur text navigasi agar ditengah */
+    font-weight: bold; /* membuat font menjadi tebal */
+    font-size: larger; /* agar membuat menjadi lebih besar*/
+    margin-right: 15px; /* agar jarak navigasi disebelah kiri 
+    tidak terlalu mepet dengan edge */
+}
+
+/*style Navigasi Anchor*/
+nav a {
+    color: #2b2b2b; /* mengubah warna text pada bagian anchor */
+    text-decoration: none; /* menghilangkan dekorasi anchor */
+    margin: 0 15px; /* mengatur jarak teks */
+}
+
+/*style Navigasi Anchor*/
+nav a:hover{
+    text-decoration: underline; /*ketika kursor diarahkan pada
+    navigasi anchor maka akan muncul underline*/
+}
+
+/*style dropdown layanan*/
+.dropdownkelompok3 {
+    position: relative; /*mengatur posisi relatif*/
+    display: inline-block; /*display hanya memblock sesuai
+    dengan dropbutton*/
+}
+
+/*style button layanan*/
+.dropbtnkelompok3 {
+    background-color: rgb(255, 255, 255); /*bg warna*/
+    color: #2b2b2b; /*warna text khusus bagian layanan*/
+    border: none; /*menghilangkan border pada tombol*/
+    cursor: pointer; /*hover akan berubah menjadi pointer*/
+    font-weight: bold; /*menebalkan text*/
+    font-size: large; /*membuat text menjadi lebih besar*/
+}
+
+/*style konten dropdown layanan*/
+.dropdowncontentkelompok3 {
+    display: none; /*menyembunyikan konten ketika tidak digunakan*/
+    position: absolute; /*menggeser layer*/
+    background-color: #ffffff; /*warna bg*/   
+}
+
+/*style konten anchor dropdown layanan*/
+.dropdowncontentkelompok3 a {
+    color: #000000; /*warna text*/
+    padding: 10px; /*padding atas bawah kiri kanan 10px*/
+    text-decoration: none; /*menghilangkan dekorasi anchor*/
+    display: block; /*mengambil seluruh lebar yang tersedia pada dropdown*/
+}
+
+/*style konten anchor layanan hover*/
+.dropdowncontentkelompok3 a:hover {
+    background-color: #ececec; /*warna bg*/ 
+    text-decoration: none; /*menghilangkan underline pada nav a hover*/
+}
+
+/*style dropdown hover dan konten layanan*/
+.dropdownkelompok3:hover .dropdowncontentkelompok3 {
+    display: block; /* menampilkan konten dropdown saat elemen dropdown dihover */
+}
+
+/* style  Halaman Profil */
+#profilkelompok3 {
+    background: url('imgberanda.png') center/cover;/*ganti bg*/
+    color: #fff; /*warna text*/
+    text-align: center;/*text rata tengan*/
+    height: 400px;/*panjang gambar*/
+    padding-top: 250px; /*jarak antar tulisan*/
+}
+
+/* style  text Halaman Profil */
+.profilcontentkelompok3 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* style  text H2 Halaman Profil */
+.profilcontentkelompok3 h2{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;  
+}
+
+/* style  text p Halaman Profil */
+.profilcontentkelompok3 p{
+    color: #ffffff;
+    font-size: 20px; 
+}
+
+/* style text h3 */
+h3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* style  text pada halaman profil */
+#fasilitaskelompok3{
+  text-align: center;
+}
+
+/* style  keseluruhan section */
+section {
+    padding: 50px 0px;
+}
+
+/* style  h3 bagian section */
+section h3 {
+    font-size: 30px;
+}
+
+/* style  icon pada bagian fasilitas */
+.gambariconkelompok3{
+    height: 100px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+/* style  p pada kelas "paragraphkelompok3 */
+section p.paragraphkelompok3 {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+    text-align: center;
+}
+
+/*mengganti warna pda konten icon*/
+section.iconcontentkelompok3 {
+    background-color: #f5f6f6;
+}
+
+/*style pada bagian id iconkelompok3*/
+#iconkelompok3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*style image pada bagian id iconkelompok3*/
+#iconkelompok3 img {
+    width: 50px;
+}
+
+/*style text dibawah iconkelompok3*/
+#iconkelompok3 div{
+    text-align: center;
+}
+
+/*style tata letak foto dibagian gallery*/
+.galerikontenkelompok3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+/*style image pada setiap div*/
+section#galerikelompok3 div img {
+    width: 400px;
+    height: 200px;
+    padding: 10px 5px;
+}
+
+/*style image pada setiap div ketika di hover*/
+section#galerikelompok3 div img:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+
+/*style halaman footer*/
+.footerkelompok3 {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+

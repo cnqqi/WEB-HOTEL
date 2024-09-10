@@ -1,0 +1,53 @@
+/*style untuk body*/
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+/*style untuk konten forumulir*/
+.container-2213010502 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px ;
+    padding-right: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*style form*/
+.form-group-2213010502 {
+    margin-bottom: 20px;
+}
+/*style label*/
+.label-2213010502 {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+/*style input*/
+.input-2213010502 {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*style button*/
+.button-2213010502 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*style label hover*/
+.button-2213010502:hover {
+    background-color: #333;
+}
